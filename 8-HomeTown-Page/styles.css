@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header-section {
+    width: 100%;
+    /* max-width: 1200px; */
+    height: 50vh;
+    background-image: url('images/callao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-header {
+    color: #ffffff;
+    font-size: 3rem;
+    background: transparent;
+    text-shadow: 1px 1px 10px #000000;
+}
+.content-header {
+    color: #ffffff;
+    font-size: 1.5rem;
+    background: transparent;
+    text-shadow: 1px 1px 10px #000000;
+}
+
+.title-activites {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+}
+
+.activities-section {
+    width: 100%;
+    background: #d7dfdc;
+}
+
+#activities-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.activitie {
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+.activitie-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.activitie-img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.guide-card {
+    width: 500px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 20px;
+    background: #b2c2bb;
+    border-radius: 10px;
+    border-bottom: 8px solid #7a8c7b;
+}
+
+.guide-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    margin-right: 20px;
+    box-shadow: 1px 1px 10px #000000;
+}
+
+.guide-img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.content-guide-card {
+    text-align: center;
+}
+
+#content-guide-card {
+    font-style: italic;
+}
