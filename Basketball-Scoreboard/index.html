@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="section">
+        <div class="container home">
+            <div class="board-container ">
+                <h1 class="title">
+                    HOME
+                </h1>
+                <div class="board">
+                    <a class="score" id="value_home">
+                        0
+                    </a>
+                </div>
+                <div class="button_container">
+                    <button class="plus" onclick="increment1Home()">
+                        <span class="plus_value">+1</span>
+                    </button>
+                    <button class="plus" onclick="increment2Home()">
+                        <span class="plus_value">+2</span>
+                    </button>
+                    <button class="plus" onclick="increment3Home()">
+                        <span class="plus_value">+3</span>
+                    </button>
+                    <button class="plus reset" onclick="resetHome()">
+                        <span class="reset_value">Reset</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container guest">
+            <div class="board-container">
+                <h1 class="title">
+                    GUEST
+                </h1>
+                <div class="board">
+                    <a class="score" id="value_guest" >0</a>
+                    
+                </div>
+                <div class="button_container">
+                    <button class="plus" id="plus1" onclick="increment1Guest()">
+                        <span class="plus_value">+1</span>
+                    </button>
+                    <button class="plus" onclick="increment2Guest()">
+                        <span class="plus_value">+2</span>
+                    </button>
+                    <button class="plus" onclick="increment3Guest()">
+                        <span class="plus_value">+3</span>
+                    </button>
+                    <button class="plus reset" onclick="resetGuest()">
+                        <span class="reset_value">Reset</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "Cursed Timer ULiL";
+    src: url("Fonts/CursedTimer.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Verdana", sans-serif;
+    src: url("Fonts/VerdanaBold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+:root {
+    --background: #1B244A;
+    --color-button: #9AABD8;
+    --color-title: #EEEEEE;
+    --color-bakcground-board: #080001;
+    --color-board-value: #F94F6D;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: var(--background);
+}
+
+.container {
+    padding: 10px 20px;
+    margin: 10px 20px;
+    height: 400px
+}
+
+.board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+h1 {
+    font-family: "Verdana", sans-serif;
+    font-size: 40px;
+}
+
+.title {
+    color: var(--color-title);
+}
+
+.board {
+    background-color: var(--color-bakcground-board);
+    border-radius: 10px;
+    width: 150px;
+    height: 120px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.score {
+    color: var(--color-board-value);
+    font-family: "Cursed Timer ULiL";
+    font-size: 90px;
+}
+
+.button_container{
+    display: flex;
+    width: 155px;
+}
+
+.plus_value {
+    font-family: "Cursed Timer ULiL";
+    font-size: small;
+}
+
+.button_container {
+    background-color: transparent;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.plus {
+    background-color: transparent;
+    color: var(--color-button);
+    border: 1px solid var(--color-button);
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plus:hover {
+    background-color: var(--color-button);
+    color: var(--background);
+}
+.reset_value {
+    font-family: 'verdana', sans-serif;
+    font-size: small;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 724px) {
+    .section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+    .guest {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .board {
+        padding-top: 28px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .score {
+        font-size: 70px;
+    }
+    .button_container {
+        width: 100px;
+    }
+    .plus_value {
+        font-size: x-small;
+    }
+    .reset_value {
+        font-size: x-small;
+    }
+}
+
+@media screen and (min-width: 924px) {
+    .title {
+        font-size: 70px;
+    }
+    .board {
+        width: 200px;
+        height: 150px;
+        padding-top: 20px;
+    }
+    .score {
+        font-size: 120px;
+    }
+    .button_container {
+        width: 300px;
+    }
+    .plus {
+        padding: 8px 16px;
+    }
+    .plus_value {
+        font-size: medium;
+    }
+    .reset_value {
+        font-size: medium;
+    }
+}
